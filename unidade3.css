@@ -1,0 +1,60 @@
+/* Definição das Variáveis no :root em Português */
+:root {
+    --cor-fundo-principal: #f4f7f6;
+    --cor-texto-escuro: #1a1a1a;
+    --cor-texto-claro: #ffffff;
+    --cor-verde-primaria: #004d40;
+    --cor-verde-secundaria: #00796b;
+    --cor-verde-fundo-destaque: #e0f2f1;
+    --cor-verde-efeito-passar: #b2dfdb;
+    --cor-alerta-fundo: #ffebee;
+    --cor-alerta-borda-e-botao: #c62828;
+    --cor-alerta-botao-passar: #b71c1c;
+    --cor-cinza-rodape: #333333;
+    --cor-fundo-ajuda: #f9f9f9;
+}
+
+/* Configurações Gerais de Acessibilidade */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-escuro);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 20px; /* Tamanho de fonte aumentado para idosos */
+}
+
+/* Cabeçalho */
+.topo-pagina {
+    background-color: var(--cor-verde-primaria);
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.topo-pagina h1 {
+    font-size: 2.2rem;
+    margin: 0 0 10px 0;
+}
+
+.subtitulo-pagina {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--cor-verde-fundo-destaque);
+}
+
+/* Container do Conteúdo */
+.conteudo-principal {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Cartões de Dicas */
+.cartao-informativo {
+    background-color: var(--cor-texto-claro);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.
