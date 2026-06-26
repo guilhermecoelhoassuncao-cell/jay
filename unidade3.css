@@ -6,12 +6,10 @@
     --cor-verde-primaria: #004d40;
     --cor-verde-secundaria: #00796b;
     --cor-verde-fundo-destaque: #e0f2f1;
-    --cor-verde-efeito-passar: #b2dfdb;
-    --cor-alerta-fundo: #ffebee;
     --cor-alerta-borda-e-botao: #c62828;
     --cor-alerta-botao-passar: #b71c1c;
     --cor-cinza-rodape: #333333;
-    --cor-fundo-ajuda: #f9f9f9;
+    --cor-sombra: rgba(0, 0, 0, 0.15);
 }
 
 /* Configurações Gerais de Acessibilidade */
@@ -22,115 +20,184 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 20px; /* Tamanho de fonte aumentado para idosos */
+    font-size: 20px; /* Fonte aumentada para idosos */
+}
+
+/* Correção de espaçamento interno para os números não colarem na borda */
+ol {
+    padding: 40px;
 }
 
 /* Cabeçalho */
 .topo-pagina {
     background-color: var(--cor-verde-primaria);
     color: var(--cor-texto-claro);
-    text-align: center;
-    padding: 40px 20px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px var(--cor-sombra);
 }
 
-.topo-pagina h1 {
-    font-size: 2.2rem;
-    margin: 0 0 10px 0;
+.recipiente-navegacao {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.subtitulo-pagina {
-    font-size: 1.3rem;
+.recipiente-navegacao h1 {
     margin: 0;
-    color: var(--cor-verde-fundo-destaque);
+    font-size: 1.8rem;
 }
 
-/* Container do Conteúdo */
-.conteudo-principal {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
-
-/* Cartões de Dicas */
-.cartao-informativo {
-    background-color: var(--cor-texto-claro);
-    border-radius: 12px;
-    padding: 30px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-left: 8px solid var(--cor-verde-secundaria);
-}
-
-.simbolo-visual {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.cartao-informativo h2 {
-    color: var(--cor-verde-primaria);
-    margin-top: 0;
-    font-size: 1.6rem;
-}
-
-.cartao-informativo p {
-    margin-bottom: 15px;
-}
-
-/* Caixa expansível (Usa a tag nativa details do HTML) */
-.detalhes-expansiveis summary {
-    background-color: var(--cor-verde-fundo-destaque);
-    color: var(--cor-verde-primaria);
-    padding: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    outline: none;
-    user-select: none;
-}
-
-.detalhes-expansiveis summary:hover {
-    background-color: var(--cor-verde-efeito-passar);
-}
-
-.texto-suporte {
-    background-color: var(--cor-fundo-ajuda);
-    padding: 15px;
-    border-left: 4px dashed var(--cor-verde-secundaria);
-    margin-top: 10px;
-    border-radius: 0 0 8px 8px;
-}
-
-/* Seção de Ajuda Urgente */
-.alerta-urgencia {
-    background-color: var(--cor-alerta-fundo);
-    border: 3px solid var(--cor-alerta-borda-e-botao);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.alerta-urgencia h2 {
-    color: var(--cor-alerta-borda-e-botao);
-    margin-top: 0;
-}
-
-/* Botão de Chamada para Ação */
-.botao-chamada {
+/* Botões de Alerta */
+.botao-ajuda-urgente {
     display: inline-block;
     background-color: var(--cor-alerta-borda-e-botao);
     color: var(--cor-texto-claro);
-    padding: 20px 40px;
-    text-decoration: none;
-    border-radius: 8px;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
     font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 15px;
+    border-radius: 6px;
+    text-decoration: none;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    text-align: center;
+    cursor: pointer;
 }
 
-.botao-chamada:hover {
+.botao-ajuda-urgente:hover {
     background-color: var(--cor-alerta-botao-passar);
+}
+
+/* Seção 1: Banner de Início */
+.banner-inicio {
+    background-color: var(--cor-verde-fundo-destaque);
+    color: var(--cor-verde-primaria);
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 4px solid var(--cor-verde-secundaria);
+}
+
+.conteudo-banner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.conteudo-banner h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+.botao-banner-ajuda {
+    display: inline-block;
+    background-color: var(--cor-verde-primaria);
+    color: var(--cor-texto-claro);
+    padding: 18px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.botao-banner-ajuda:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* Estrutura do Conteúdo */
+.conteudo-principal {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.secao-conteudo {
+    margin-bottom: 50px;
+}
+
+.titulo-secao {
+    color: var(--cor-verde-primaria);
+    border-bottom: 3px solid var(--cor-verde-secundaria);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+/* Grade de Cartões */
+.grade-cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cartao-informativo, .cartao-longo {
+    background-color: var(--cor-texto-claro);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px var(--cor-sombra);
+}
+
+.cartao-informativo {
+    border-top: 8px solid var(--cor-verde-secundaria);
+}
+
+/* Seção de Direitos Isolada (Resolvido o bug de compartilhamento) */
+.caixa-direitos {
+    background-color: var(--cor-texto-claro);
+    border-radius: 12px;
+    border: 3px dashed var(--cor-verde-secundaria);
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO DO MODAL (Comportamento de Camadas e Centralização)
+   ========================================================================== */
+
+/* Fundo escurecido e fixo - Escondido por padrão */
+.modal-fundo {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Quando o link ativa o ID no navegador, exibe o modal */
+.modal-fundo:target {
+    display: block;
+}
+
+/* O que fazer agora? - Conteúdo interno do Modal */
+.modal-conteudo {
+    background-color: #fff9e6; /* Tom amarelado suave */
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px dashed var(--cor-verde-primaria);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    width: 600px;
+    margin: 0 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.modal-conteudo h2 {
+    margin-top: 0;
+    color: var(--cor-alerta-borda-e-botao);
+}
+
+.container-botao-fechar {
+    text-align: right;
+    margin-top: 20px;
 }
 
 /* Rodapé */
