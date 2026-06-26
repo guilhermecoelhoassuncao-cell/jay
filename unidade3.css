@@ -57,4 +57,88 @@ body {
     border-radius: 12px;
     padding: 30px;
     margin-bottom: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid var(--cor-verde-secundaria);
+}
+
+.simbolo-visual {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.cartao-informativo h2 {
+    color: var(--cor-verde-primaria);
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+.cartao-informativo p {
+    margin-bottom: 15px;
+}
+
+/* Caixa expansível (Usa a tag nativa details do HTML) */
+.detalhes-expansiveis summary {
+    background-color: var(--cor-verde-fundo-destaque);
+    color: var(--cor-verde-primaria);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    user-select: none;
+}
+
+.detalhes-expansiveis summary:hover {
+    background-color: var(--cor-verde-efeito-passar);
+}
+
+.texto-suporte {
+    background-color: var(--cor-fundo-ajuda);
+    padding: 15px;
+    border-left: 4px dashed var(--cor-verde-secundaria);
+    margin-top: 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Seção de Ajuda Urgente */
+.alerta-urgencia {
+    background-color: var(--cor-alerta-fundo);
+    border: 3px solid var(--cor-alerta-borda-e-botao);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.alerta-urgencia h2 {
+    color: var(--cor-alerta-borda-e-botao);
+    margin-top: 0;
+}
+
+/* Botão de Chamada para Ação */
+.botao-chamada {
+    display: inline-block;
+    background-color: var(--cor-alerta-borda-e-botao);
+    color: var(--cor-texto-claro);
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.botao-chamada:hover {
+    background-color: var(--cor-alerta-botao-passar);
+}
+
+/* Rodapé */
+.rodape-pagina {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--cor-cinza-rodape);
+    color: var(--cor-texto-claro);
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
