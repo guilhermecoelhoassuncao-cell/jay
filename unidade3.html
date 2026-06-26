@@ -9,49 +9,79 @@
 <body>
 
     <header class="topo-pagina">
-        <h1>Guia de Segurança na Internet</h1>
-        <p class="subtitulo-pagina">Aprenda a navegar na internet com total segurança e tranquilidade.</p>
+        <div class="recipiente-navegacao">
+            <h1>Guia de Segurança</h1>
+            <a href="#janela-modal" class="botao-ajuda-urgente">⚠️ PRECISO DE AJUDA AGORA</a>
+        </div>
     </header>
+
+    <section class="banner-inicio">
+        <div class="conteudo-banner">
+            <h2>Navegue na Internet com Confiança</h2>
+            <p>Descubra como proteger suas informações, conhecer seus direitos e evitar os golpes mais comuns do dia a dia.</p>
+            <a href="#janela-modal" class="botao-banner-ajuda">Fui Vítima de um Golpe? Clique Aqui</a>
+        </div>
+    </section>
 
     <main class="conteudo-principal">
         
-        <section class="cartao-informativo">
-            <div class="simbolo-visual">🔒</div>
-            <h2>1. Crie Senhas Fortes e Seguras</h2>
-            <p>Evite usar sua data de nascimento, nome de netos ou sequências simples como "123456".</p>
-            <details class="detalhes-expansiveis">
-                <summary>Clique aqui para ver um exemplo</summary>
-                <p class="texto-suporte">Misture letras maiúsculas, minúsculas, números e símbolos. <br><strong>Exemplo seguro:</strong> J0ao@2026#</p>
-            </details>
+        <section class="secao-conteudo">
+            <h2 class="titulo-secao">💡 Conselhos Importantes</h2>
+            <div class="grade-cartoes">
+                <div class="cartao-informativo">
+                    <div class="simbolo-visual">🔒</div>
+                    <h3>Senhas Fortes</h3>
+                    <p>Misture letras maiúsculas, minúsculas, números e símbolos. Evite usar datas de nascimento ou sequências simples como "123456".</p>
+                </div>
+                <div class="cartao-informativo">
+                    <div class="simbolo-visual">📞</div>
+                    <h3>Mensagens Suspeitas</h3>
+                    <p>Se um parente pedir dinheiro pelo WhatsApp usando um número novo, ligue para o número antigo dele antes de transferir qualquer valor.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="cartao-informativo">
-            <div class="simbolo-visual">📞</div>
-            <h2>2. Cuidado com Mensagens de Desconhecidos</h2>
-            <p>Se receber uma mensagem no WhatsApp de alguém dizendo que mudou de número e pedindo dinheiro, não envie.</p>
-            <details class="detalhes-expansiveis">
-                <summary>O que fazer nessa situação?</summary>
-                <p class="texto-suporte">Ligue imediatamente para o número antigo do seu familiar ou mude de canal para confirmar se a história é verdadeira antes de fazer qualquer transferência.</p>
-            </details>
+        <section class="secao-conteudo">
+            <h2 class="titulo-secao">⚖️ Seus Direitos na Internet</h2>
+            <div class="cartao-longo caixa-direitos">
+                <p>O Brasil possui leis importantes, como o <strong>Marco Civil da Internet</strong> e a <strong>LGPD (Lei Geral de Proteção de Dados)</strong>, que garantem a segurança e o respeito aos seus dados pessoais.</p>
+                <ul>
+                    <li>Você tem o direito de ter suas fotos e informações protegidas.</li>
+                    <li>Nenhuma empresa pode vender seus dados sem sua autorização expressa.</li>
+                    <li>Em caso de fraudes financeiras na internet, os bancos têm o dever de oferecer suporte e investigar o ocorrido.</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="cartao-informativo">
-            <div class="simbolo-visual">🖱️</div>
-            <h2>3. Atenção com Links Suspeitos</h2>
-            <p>Bancos e lojas famosas não costumam mandar links urgentes dizendo que sua conta vai ser bloqueada ou que você ganhou um prêmio do nada.</p>
-            <details class="detalhes-expansiveis">
-                <summary>Como se proteger?</summary>
-                <p class="texto-suporte">Na dúvida, não clique. Pergunte para um parente de confiança ou ligue diretamente para o número oficial do seu banco.</p>
-            </details>
-        </section>
-
-        <section class="alerta-urgencia">
-            <h2>Precisa de ajuda agora?</h2>
-            <p>Se você acha que caiu em um golpe, converse com alguém de sua confiança ou ligue para o seu banco imediatamente.</p>
-            <a href="tel:190" class="botao-chamada">Ligar para a Polícia (190)</a>
+        <section class="secao-conteudo">
+            <h2 class="titulo-secao">🔍 Como Identificar uma Fraude?</h2>
+            <div class="cartao-longo">
+                <p>Os golpistas costumam usar situações do cotidiano para nos pegar desprevenidos. Fique muito atento se você encontrar:</p>
+                <ol>
+                    <li><strong>Mensagens de Urgência:</strong> Frases como "Sua conta será bloqueada hoje!" ou "Você tem 15 minutos para pagar".</li>
+                    <li><strong>Prêmios e Sorteios Inesperados:</strong> Notificações dizendo que você ganhou um prêmio em algo que nunca se inscreveu.</li>
+                    <li><strong>Links de Bancos por Mensagem:</strong> Os bancos reais não mandam links de atualização por SMS ou WhatsApp.</li>
+                </ol>
+            </div>
         </section>
 
     </main>
+
+    <div id="janela-modal" class="modal-fundo">
+        <section class="modal-conteudo">
+            <h2>🚨 O que fazer agora?</h2>
+            <p>Se você acha que caiu em um golpe ou está com medo de uma mensagem:</p>
+            <ol>
+                <li><strong>Pare tudo o que está fazendo.</strong></li>
+                <li><strong>Ligue para um filho, neto ou amigo próximo.</strong></li>
+                <li><strong>Ligue para o seu banco</strong> usando o número que está atrás do seu cartão.</li>
+                <li><strong>Registre um Boletim de Ocorrência</strong> na delegacia mais próxima ou pela internet.</li>
+            </ol>
+            <div class="container-botao-fechar">
+                <a href="#" class="botao-ajuda-urgente">Fechar</a>
+            </div>
+        </section>
+    </div>
 
     <footer class="rodape-pagina">
         <p>Este site foi feito com carinho para ajudar na sua proteção digital.</p>
